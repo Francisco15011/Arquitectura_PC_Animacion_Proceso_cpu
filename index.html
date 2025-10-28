@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de una Instrucción en la CPU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flujo de una Instrucción en la CPU</h1>
+
+    <div class="cpu-diagram">
+        <div class="stage">
+            <div class="box entrada">Entrada<br>(Instrucción)</div>
+            <p class="desc" id="desc1"></p>
+        </div>
+        <div class="arrow" id="arrow1">→</div>
+
+        <div class="stage">
+            <div class="box control">Unidad de Control</div>
+            <p class="desc" id="desc2"></p>
+        </div>
+        <div class="arrow" id="arrow2">→</div>
+
+        <div class="stage">
+            <div class="box registros">Registros</div>
+            <p class="desc" id="desc3"></p>
+        </div>
+        <div class="arrow" id="arrow3">→</div>
+
+        <div class="stage">
+            <div class="box alu">ALU<br>(Unidad Aritmético-Lógica)</div>
+            <p class="desc" id="desc4"></p>
+        </div>
+        <div class="arrow" id="arrow4">→</div>
+
+        <div class="stage">
+            <div class="box salida">Salida<br>(Resultado)</div>
+            <p class="desc" id="desc5"></p>
+        </div>
+    </div>
+
+    <button id="startBtn">Iniciar Animación</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

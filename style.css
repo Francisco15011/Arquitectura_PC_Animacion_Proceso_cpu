@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1522;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.cpu-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 160px;
+    height: 100px;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00ffff;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #00ffff;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+    align-self: center;
+}
+
+.active {
+    background-color: #00ffff;
+    color: #0b1522;
+    transform: scale(1.1);
+}
+
+.visible {
+    opacity: 1;
+}
+
+button {
+    background-color: #00ffff;
+    color: #0b1522;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00cccc;
+}
+
+.desc {
+    margin-top: 10px;
+    width: 180px;
+    font-size: 0.9rem;
+    color: #cccccc;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.desc.visible {
+    opacity: 1;
+}
